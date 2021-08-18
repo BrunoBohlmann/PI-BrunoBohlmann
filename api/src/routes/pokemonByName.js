@@ -7,7 +7,8 @@ const { Pokemon } = require('../db.js');
 
 //Consultar pokemon por name
 router.get('/', async (req, res) => {
-	const { name } = req.query
+	var { name } = req.query
+	name = name.toLowerCase()
 
 	// Vamos a buscar a la API
 	try{
@@ -38,7 +39,8 @@ router.get('/', async (req, res) => {
 		if(pokemonFinal.length === 0){
 			return res.status(404).send('Error')
 		}else{
-			return res.send(pokemonFinal[0])	
+			console.log(pokemonFinal)
+			return res.send(pokemonFinal)
 		}
 	}
 	// Si la API no funciona
@@ -50,7 +52,7 @@ router.get('/', async (req, res) => {
 				}
 			})
 			// Si la DB devuelve algo lo retorno
-			return res.json(pokeFinal[0])
+			return res.json(pokeFinal)
 		}
 		// Si la DB no devuelve nada tiro error
 		catch(error){

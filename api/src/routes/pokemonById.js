@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const axios = require('axios');
 const sequelize = require('sequelize')
-const { Pokemon } = require('../db.js');
+const { Pokemon, Type } = require('../db.js');
 
 
 // Consultar pokemon por id
@@ -30,15 +30,18 @@ router.get('/:id', async (req, res) => {
 				height: e.height,
 				weight: e.weight,
 				img: e.sprites.other.dream_world.front_default,
-				types: e.types.map(typePoke => typePoke) 
+				types: e.types.map(typePoke => typePoke.type.name) 
 	        })
 	    })
+	    console.log(pokeFinal[0])
 	    res.send(pokeFinal[0])
 	}
 	// Si la API no devuelve nada, vamos a la DB
 	catch(err){
 		try{
-			const pokeFinal = await Pokemon.findByPk(id)
+			const pokeFinal = await Pokemon.findByPk(id,{
+				include: Type
+			})
 			// Si la DB devuelve algo lo retorno
 			return res.json(pokeFinal)
 		}
