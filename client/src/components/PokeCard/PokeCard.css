@@ -1,0 +1,82 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.link{
+	text-decoration: none;
+}
+/*Card en general*/
+.pokeCard{
+	width: 300px;
+	height: 400px;
+	margin: 15px auto;
+	border: solid 1px white;
+}
+
+/*Header*/
+.pokeHeader{
+	padding: 5% 0% 0%;
+	width: 100%;
+	height: 70%;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+.pokeHeader:hover{
+	background-color: rgba(172, 176, 173, 0.7);
+}
+
+/*Imagen de la card*/
+.pokeImg{
+	width: 50%;
+
+	padding: 10%;
+	margin: 0px auto 20px;
+	align-content: center;
+
+	border-radius: 100px;
+	border: 2px solid white;
+}
+.pokeImg:hover{
+	border: 2px solid rgba(17, 191, 61, 1);
+}
+.pokeImg img{
+	width: 150px;
+	height: 150px;
+
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+/*Name*/
+.pokeName{
+	width: 50%;
+	margin: auto;
+	text-align: center;
+
+	background-color: rgba(52, 98, 169, 1.0);
+	border: 0.7px solid black;
+}
+.pokeName h3{
+	font-size: 23px;
+
+	color: rgba(251, 203, 28, 1.0);
+	-webkit-text-stroke: 0.07px black;
+}
+
+/*Types de los pokemones*/
+.types{
+	display: flex;
+	height: 25%;
+
+	background-color: rgba(52, 98, 169, 1.0);
+	border-top: 5px solid grey;
+}
+
+.type{
+	padding: 0.5% 10%;
+	font-size: 150%;
+	font-weight: lighter;
+	-webkit-text-stroke: 0.07px black;
+	margin: auto;
+	color: white;
+}

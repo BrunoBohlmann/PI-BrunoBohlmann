@@ -4,10 +4,19 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+// Importamos browserRouter para manejar rutas en nuestra app
+import { BrowserRouter } from 'react-router-dom';
+// Importamos el provider para envolver la app y usar states
+import { Provider } from "react-redux";
+// Importamos el store para pasarselo al provider y que toda la app sepa del estado global
+import store from "./store/index";
+
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <Provider store={store}>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Provider>,
   document.getElementById('root')
 );
 

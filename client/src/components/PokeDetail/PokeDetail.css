@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.pokeDetail{
+	width: 75%;
+	height: 55%;
+	margin: 80px auto;
+	padding: 30px 30px 10px 30px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+.title{
+	margin: 0px auto 30px auto;
+	width: 15%;
+	height: 15%;
+	text-align: center;
+}
+.title h1{
+	font-size: 40px;
+
+	color: rgba(251, 203, 28, 1.0);
+	-webkit-text-stroke: 0.07px black;
+}
+
+
+.img{
+	width: 30%;
+	margin: 0px auto 0px auto;
+
+}
+
+.img img{
+	width: 200px;
+	height: 200px;
+
+
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.poketypes{
+    display: flex;
+    width: 80%;
+	font-size: 130%;
+	font-weight: lighter;
+	-webkit-text-stroke: 0.04px black;
+	color: white;
+}
+.poketype{
+	color: rgba(251, 203, 28, 1.0);
+	margin: 0px 0px 0px 10px;
+}
+.stats{
+	text-align: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	font-size: 150%;
+	font-weight: lighter;
+	-webkit-text-stroke: 0.04px black;
+	margin: 10px auto; 
+	color: white;
+}

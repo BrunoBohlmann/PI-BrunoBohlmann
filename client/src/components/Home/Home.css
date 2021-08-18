@@ -1,0 +1,72 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+.pokeCards{
+	border: solid 4px lightgrey;
+
+	width: 90%;
+	margin: 2% auto;
+	padding: 1%;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+}
+
+.nav{
+	width: 90%;
+	margin: auto;
+}
+
+.botones{
+	width: 80%;
+	display: flex;
+	margin: 5px auto 20px auto;
+	justify-content: center;
+	border-bottom: 2px solid white;
+}
+.botones div{
+	margin: 10px auto;
+}
+
+.SearchBar{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;	
+}
+
+.crearpokemon{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+.crearpokemon a{
+	color: rgba(251, 203, 28, 1.0);
+	-webkit-text-stroke: 0.07px black;
+	text-decoration: underline;
+}
+
+.refresh{
+  	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+
+.filtersypages{
+	width: 80%;
+	display: flex;
+	margin: auto;
+}
+.filtersypages div{
+	margin: 5px auto;
+}
+.filtersypages label{
+	display: block;
+	color: red;
+}
+
+.paginacion{
+	width: 80%;
+	border: solid 2px black;
+	margin: 2% auto;
+}

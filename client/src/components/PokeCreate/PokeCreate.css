@@ -1,0 +1,44 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+
+.title-form{
+	width: 70%;
+	margin: 25px auto;
+	text-align: center;
+	color: white;
+	-webkit-text-stroke: 0.05px black;
+}
+
+.form{
+	width: 80%;
+	margin: auto;
+	align-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	background-color: rgba(255, 255, 255, 0.7);
+}
+
+input{
+	height: 30px;
+	margin: 10px;
+}
+
+.btn-submit{
+	margin: auto;
+}
+.btn-submit button{
+	width: 100%;
+}
+.btn-return{
+	text-align: center;
+	width: 80%;
+	margin: auto;
+	background-color: rgba(52, 98, 169, 1.0);
+}
+.btn-return a{
+	text-decoration: none;
+	color: rgba(251, 203, 28, 1.0);
+	-webkit-text-stroke: 0.07px black;
+}

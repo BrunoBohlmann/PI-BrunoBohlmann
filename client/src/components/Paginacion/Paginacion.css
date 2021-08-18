@@ -1,0 +1,26 @@
+.div-pagesNumbers{
+	width: 50%;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 10px;
+}
+
+.list-pagesNumbers{
+  	display: flex;
+  	align-items: center;
+	list-style: none;
+}
+
+.page-number{
+	margin-left: auto;
+	margin-right: auto;
+	padding: 3px;
+	font-size: 30px;
+	color: white;
+	-webkit-text-stroke: 0.4px black;
+}
+
+.page-number p:hover{
+	color: lightyellow;
+}
+
